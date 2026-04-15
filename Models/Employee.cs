@@ -5,7 +5,7 @@ namespace Employeeemanagement.Models
 {
     public class Employee
     {
-        [JsonIgnore]
+        
         public int Id { get; set; }
 
         [Required(ErrorMessage = "Name is required")]
