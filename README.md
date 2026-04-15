@@ -30,7 +30,7 @@ It supports basic CRUD operations such as creating, reading, updating, and delet
 
 ##  Project Structure
 
-
+```
 Employeeemanagement/
 │
 ├── Controllers/        # Contains API controllers
@@ -40,7 +40,7 @@ Employeeemanagement/
 ├── appsettings.json    # Application configuration
 ├── Employeeemanagement.csproj
 └── README.md
-
+```
 
 ---
 
