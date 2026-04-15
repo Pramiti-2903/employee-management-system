@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Employee Management System</h2>
+
+        <!-- ADD BUTTON -->
+        <button class="btn-add" onclick="showForm()">Add Employee</button>
+
+        <!-- FORM -->
+        <div id="formContainer" class="form-container" style="display:none;">
+
+            <h3 id="formTitle">Add Employee</h3>
+            <input type="hidden" id="empId">
+
+            <input type="text" id="name" placeholder="Enter Name">
+            <input type="text" id="role" placeholder="Enter Role">
+            <input type="number" id="salary" placeholder="Enter Salary">
+
+            <br>
+
+            <button class="btn-save" onclick="saveEmployee()">Save</button>
+            <button class="btn-cancel" onclick="hideForm()">Cancel</button>
+        </div>
+        <div id="loader" style="display:none; text-align:center; margin:20px;">
+            <div class="spinner"></div>
+        </div>
+        <input type="text"
+               id="searchInput"
+               placeholder="Search by name or role..."
+               onkeyup="filterEmployees()"
+               class="search-box" />
+
+        <!-- TABLE -->
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>Salary</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="employeeTable"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
